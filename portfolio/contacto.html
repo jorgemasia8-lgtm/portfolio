@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Jorge Masià</title>
+</head>
+<body>
+<a href="#contenido">Saltar al contenido</a>
+<header id="inicio">
+    <h1>Contacto</h1>
+        <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+        </nav>
+</header>
+<main id="contenido">
+    <section>
+        <h2>Escríbeme</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+                <p><label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required></p>
+                <p><label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required></p>
+                <p><label for="motivo">Motivo</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Elige un motivo</option>
+                    <option value="practicas">Prácticas</option>
+                    <option value="proyecto">Proyecto</option>
+                    <option value="otro">Otro</option>
+                </select></p>
+            </fieldset>
+            <fieldset>
+                <legend>Cómo me has conocido</legend>
+                <p><input type="radio" id="con-buscador" name="conocido" value="buscador" required>
+                <label for="con-buscador">Buscando en internet</label></p>
+                <p><input type="radio" id="con-recomendacion" name="conocido" value="recomendacion">
+                <label for="con-recomendacion">Por una recomendación</label></p>
+                <p><input type="radio" id="con-clase" name="conocido" value="clase">
+                <label for="con-clase">Desde clase</label></p>
+            </fieldset>
+            <p><label for="mensaje">Mensaje (máximo 500 caracteres)</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="40" maxlength="500" required></textarea></p>
+            <p><input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto la política de privacidad y que se use mi mensaje solo para contestarme</label></p>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section>
+        <h2>Otras vías</h2>
+        <ul>
+            <li><a href="mailto:jormasdia2007@icloud.com">Escríbeme por correo</a></li>
+            <li><a href="https://github.com/jorgemasia8-lgtm" target="_blank" rel="noopener noreferrer">Mi perfil de GitHub</a></li>
+        </ul>
+    </section>
+
+</main>
+<footer>
+    <p>&copy; 2026 Jorge Masià | <a href="https://github.com/jorgemasia8-lgtm" target="_blank" rel="noopener noreferrer">Mi perfil de GitHub</a></p>
+</footer>
+</body>
+</html>
